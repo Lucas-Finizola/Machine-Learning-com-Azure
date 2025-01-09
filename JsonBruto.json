@@ -1,0 +1,300 @@
+{
+    "runId": "ms-learm-bike-automl_2",
+    "runUuid": "e39529dc-2d71-478a-ae10-26a157aba3b9",
+    "parentRunUuid": "6f85eeac-ecb0-4866-a965-e9934037282b",
+    "rootRunUuid": "6f85eeac-ecb0-4866-a965-e9934037282b",
+    "target": "Serverless",
+    "status": "Completed",
+    "parentRunId": "ms-learm-bike-automl",
+    "dataContainerId": "dcid.ms-learm-bike-automl_2",
+    "createdTimeUtc": "2025-01-09T19:02:10.9906325+00:00",
+    "startTimeUtc": "2025-01-09T19:02:33.211Z",
+    "endTimeUtc": "2025-01-09T19:03:17.115Z",
+    "error": null,
+    "warnings": null,
+    "tags": {
+        "_aml_system_azureml.automlComponent": "AutoML",
+        "mlflow.source.type": "JOB",
+        "mlflow.source.name": "automl_driver.py",
+        "_aml_system_codegen": "completed",
+        "_aml_system_automl_is_child_run_end_telemetry_event_logged": "True"
+    },
+    "properties": {
+        "runTemplate": "automl_child",
+        "pipeline_id": "__AutoML_Ensemble__",
+        "pipeline_spec": "{\"pipeline_id\":\"__AutoML_Ensemble__\",\"objects\":[{\"module\":\"azureml.train.automl.ensemble\",\"class_name\":\"Ensemble\",\"spec_class\":\"sklearn\",\"param_args\":[],\"param_kwargs\":{\"automl_settings\":\"{'task_type':'regression','primary_metric':'normalized_root_mean_squared_error','verbosity':20,'ensemble_iterations':3,'ensemble_download_models_timeout_sec':300,'is_timeseries':False,'subscription_id':'61e9823c-3c71-452f-bec8-62b1a89e49ed','time_column_name':None,'grain_column_names':None}\",\"ensemble_run_id\":\"ms-learm-bike-automl_2\",\"experiment_name\":\"ms-learm-bike-rental\",\"workspace_name\":\"LaboratorioAI900\",\"subscription_id\":\"61e9823c-3c71-452f-bec8-62b1a89e49ed\",\"resource_group_name\":\"LAB-0\"}}]}",
+        "training_percent": "100",
+        "predicted_cost": null,
+        "iteration": "2",
+        "_aml_system_scenario_identification": "Remote.Child",
+        "_azureml.ComputeTargetType": "amlctrain",
+        "_azureml.ClusterName": "Serverless",
+        "ContentSnapshotId": "75b4c717-7ca0-452d-8fde-ee9d44c35011",
+        "ProcessInfoFile": "azureml-logs/process_info.json",
+        "ProcessStatusFile": "azureml-logs/process_status.json",
+        "run_preprocessor": "",
+        "run_algorithm": "VotingEnsemble",
+        "ensembled_iterations": "[0, 1]",
+        "ensembled_algorithms": "['LightGBM', 'RandomForest']",
+        "ensembled_run_ids": "['ms-learm-bike-automl_0', 'ms-learm-bike-automl_1']",
+        "ensemble_weights": "[0.6666666666666666, 0.3333333333333333]",
+        "best_individual_pipeline_score": "0.09357675586470318",
+        "best_individual_iteration": "0",
+        "model_output_path": "outputs/model.pkl",
+        "conda_env_data_location": "aml://artifact/ExperimentRun/dcid.ms-learm-bike-automl_2/outputs/conda_env_v_1_0_0.yml",
+        "model_data_location": "aml://artifact/ExperimentRun/dcid.ms-learm-bike-automl_2/outputs/model.pkl",
+        "model_size_on_disk": "267652",
+        "scoring_data_location": "aml://artifact/ExperimentRun/dcid.ms-learm-bike-automl_2/outputs/scoring_file_v_1_0_0.py",
+        "scoring_data_location_v2": "aml://artifact/ExperimentRun/dcid.ms-learm-bike-automl_2/outputs/scoring_file_v_2_0_0.py",
+        "scoring_data_location_pbi": "aml://artifact/ExperimentRun/dcid.ms-learm-bike-automl_2/outputs/scoring_file_pbi_v_1_0_0.py",
+        "model_exp_support": "True",
+        "pipeline_graph_version": "1.0.0",
+        "model_name": "mslearmbikeauto2",
+        "score": "0.08867390933295753",
+        "score_table": "NaN",
+        "run_properties": "estimators=[('0', Pipeline(memory=None, steps=[('maxabsscaler', MaxAbsScaler(copy=True",
+        "pipeline_script": "{\"pipeline_id\":\"__AutoML_Ensemble__\",\"objects\":[{\"module\":\"azureml.train.automl.ensemble\",\"class_name\":\"Ensemble\",\"spec_class\":\"sklearn\",\"param_args\":[],\"param_kwargs\":{\"automl_settings\":\"{'task_type':'regression','primary_metric':'normalized_root_mean_squared_error','verbosity':20,'ensemble_iterations':3,'ensemble_download_models_timeout_sec':300,'is_timeseries':False,'subscription_id':'61e9823c-3c71-452f-bec8-62b1a89e49ed','time_column_name':None,'grain_column_names':None}\",\"ensemble_run_id\":\"ms-learm-bike-automl_2\",\"experiment_name\":\"ms-learm-bike-rental\",\"workspace_name\":\"LaboratorioAI900\",\"subscription_id\":\"61e9823c-3c71-452f-bec8-62b1a89e49ed\",\"resource_group_name\":\"LAB-0\"}}]}",
+        "training_type": "train_valid",
+        "fit_time": "1",
+        "goal": "normalized_root_mean_squared_error_min",
+        "primary_metric": "normalized_root_mean_squared_error",
+        "errors": "{}",
+        "onnx_model_resource": "{}",
+        "dependencies_versions": "{\"azureml-automl-runtime\": \"1.58.0\", \"azureml-training-tabular\": \"1.58.0\", \"azureml-dataset-runtime\": \"1.58.0\", \"azureml-responsibleai\": \"1.58.0\", \"azureml-train-automl-client\": \"1.58.0\", \"azureml-pipeline-core\": \"1.58.0\", \"azureml-dataprep-rslex\": \"2.22.5\", \"azureml-dataprep\": \"5.1.6\", \"azureml-train-restclients-hyperdrive\": \"1.58.0\", \"azureml-interpret\": \"1.58.0\", \"azureml-dataprep-native\": \"41.0.0\", \"azureml-inference-server-http\": \"1.4.0\", \"azureml-defaults\": \"1.58.0\", \"azureml-telemetry\": \"1.58.0\", \"azureml-train-automl-runtime\": \"1.58.0\", \"azureml-mlflow\": \"1.58.0.post3\", \"azureml-train-automl\": \"1.58.0\", \"azureml-automl-core\": \"1.58.0\", \"azureml-train-core\": \"1.58.0\", \"azureml-core\": \"1.58.0.post1\"}",
+        "num_cores": "4",
+        "num_logical_cores": "4",
+        "peak_memory_usage": "1708832",
+        "vm_configuration": "x86_64",
+        "core_hours": "0.00581266111111111",
+        "feature_skus": "automatedml_sdk_guardrails"
+    },
+    "parameters": {},
+    "services": {},
+    "inputDatasets": [],
+    "outputDatasets": [],
+    "runDefinition": {
+        "script": "automl_driver.py",
+        "useAbsolutePath": true,
+        "arguments": [],
+        "sourceDirectoryDataStore": null,
+        "framework": "Python",
+        "communicator": "None",
+        "target": "Serverless",
+        "autoClusterComputeSpecification": {
+            "instanceSize": "Standard_DS3_v2",
+            "instancePriority": "Dedicated",
+            "osType": null,
+            "location": null,
+            "runtimeVersion": null
+        },
+        "dataReferences": {},
+        "data": {},
+        "outputData": {},
+        "datacaches": [],
+        "jobName": null,
+        "maxRunDurationSeconds": null,
+        "nodeCount": 1,
+        "maxNodeCount": 3,
+        "instanceTypes": [],
+        "priority": null,
+        "credentialPassthrough": false,
+        "identity": null,
+        "environment": {
+            "name": "AzureML-ai-ml-automl",
+            "version": "12",
+            "assetId": "azureml://registries/azureml/environments/AzureML-ai-ml-automl/versions/12",
+            "autoRebuild": false,
+            "python": {
+                "interpreterPath": null,
+                "userManagedDependencies": true,
+                "condaDependencies": null,
+                "baseCondaEnvironment": null
+            },
+            "environmentVariables": {},
+            "docker": {
+                "baseImage": null,
+                "platform": {
+                    "os": "Linux",
+                    "architecture": "amd64"
+                },
+                "baseDockerfile": null,
+                "buildContext": {
+                    "locationType": "storageAccount",
+                    "location": "https://amlwlrt4use01.blob.core.windows.net/azureml-659fa2de-a415-5896-8b92-dd6b3be45bc7/context",
+                    "dockerfilePath": "Dockerfile"
+                },
+                "baseImageRegistry": null
+            },
+            "spark": {
+                "repositories": [],
+                "packages": [],
+                "precachePackages": true
+            },
+            "inferencingStackVersion": null
+        },
+        "history": {
+            "outputCollection": true,
+            "directoriesToWatch": [
+                "logs"
+            ],
+            "enableMLflowTracking": true
+        },
+        "spark": {
+            "configuration": {}
+        },
+        "parallelTask": {
+            "maxRetriesPerWorker": 0,
+            "workerCountPerNode": 1,
+            "terminalExitCodes": null,
+            "configuration": {}
+        },
+        "amlCompute": {
+            "name": "Serverless",
+            "vmSize": null,
+            "retainCluster": false,
+            "clusterMaxNodeCount": 3
+        },
+        "aiSuperComputer": {
+            "instanceType": "D2",
+            "imageVersion": null,
+            "location": null,
+            "aiSuperComputerStorageData": null,
+            "interactive": false,
+            "scalePolicy": null,
+            "virtualClusterArmId": null,
+            "tensorboardLogDirectory": null,
+            "sshPublicKey": null,
+            "sshPublicKeys": null,
+            "enableAzmlInt": true,
+            "priority": "Medium",
+            "slaTier": "Standard",
+            "userAlias": null
+        },
+        "kubernetesCompute": {
+            "instanceType": null
+        },
+        "tensorflow": {
+            "workerCount": 0,
+            "parameterServerCount": 0
+        },
+        "mpi": {
+            "processCountPerNode": 0
+        },
+        "pyTorch": {
+            "communicationBackend": null,
+            "processCount": null
+        },
+        "hdi": {
+            "yarnDeployMode": "None"
+        },
+        "containerInstance": {
+            "region": null,
+            "cpuCores": 2,
+            "memoryGb": 3.5
+        },
+        "exposedPorts": null,
+        "docker": {
+            "useDocker": true,
+            "sharedVolumes": true,
+            "shmSize": "2g",
+            "arguments": []
+        },
+        "cmk8sCompute": {
+            "configuration": {}
+        },
+        "commandReturnCodeConfig": {
+            "returnCode": "Zero",
+            "successfulReturnCodes": []
+        },
+        "environmentVariables": {
+            "AUTOML_SDK_RESOURCE_URL": "https://aka.ms/automl-resources/"
+        },
+        "applicationEndpoints": {},
+        "parameters": []
+    },
+    "logFiles": {
+        "logs/azureml/azureml_automl-child.log": "https://laboratorioai93549643899.blob.core.windows.net/azureml/ExperimentRun/dcid.ms-learm-bike-automl_2/logs/azureml/azureml_automl-child.log?sv=2019-07-07&sr=b&sig=KWj9BGkA5jlNgrAJO7IZIlDlAYRMV2b1dQ3DcUe3PcY%3D&skoid=842335f8-7d60-49d0-a5ce-346ea9bf685f&sktid=c8358cc2-c042-48dc-8708-80d8c99b8f81&skt=2025-01-09T18%3A46%3A01Z&ske=2025-01-11T18%3A56%3A01Z&sks=b&skv=2019-07-07&st=2025-01-09T19%3A58%3A50Z&se=2025-01-10T04%3A08%3A50Z&sp=r",
+        "logs/azureml/azureml_automl.log": "https://laboratorioai93549643899.blob.core.windows.net/azureml/ExperimentRun/dcid.ms-learm-bike-automl_2/logs/azureml/azureml_automl.log?sv=2019-07-07&sr=b&sig=l0zWarmP72rrCl06zyywiPVw1yd5kcj%2BvdvSP%2B2PhCc%3D&skoid=842335f8-7d60-49d0-a5ce-346ea9bf685f&sktid=c8358cc2-c042-48dc-8708-80d8c99b8f81&skt=2025-01-09T18%3A46%3A01Z&ske=2025-01-11T18%3A56%3A01Z&sks=b&skv=2019-07-07&st=2025-01-09T19%3A58%3A50Z&se=2025-01-10T04%3A08%3A50Z&sp=r"
+    },
+    "jobCost": {
+        "chargedCpuCoreSeconds": 168,
+        "chargedCpuMemoryMegabyteSeconds": null,
+        "chargedGpuSeconds": null,
+        "chargedNodeUtilizationSeconds": 4390.404399999999
+    },
+    "revision": 19,
+    "runTypeV2": {
+        "orchestrator": "Execution",
+        "traits": [
+            "automl",
+            "Remote.Child",
+            "scriptRun",
+            "remote",
+            "AlmostCommonRuntime",
+            "CommonRuntime"
+        ],
+        "attribution": "AutoML",
+        "computeType": "AmlcTrain"
+    },
+    "settings": {},
+    "computeRequest": {
+        "nodeCount": 1,
+        "gpuCount": 0
+    },
+    "compute": {
+        "target": "Serverless",
+        "targetType": "amlcompute",
+        "vmSize": null,
+        "instanceType": null,
+        "instanceCount": 1,
+        "gpuCount": 0,
+        "priority": null,
+        "region": null,
+        "armId": null,
+        "properties": null
+    },
+    "createdBy": {
+        "userObjectId": "7b6c14ce-bec0-4d68-985e-f5a4548aa405",
+        "userPuId": "100320042EF1F196",
+        "userIdp": "live.com",
+        "userAltSecId": "1:live.com:00037FFF8BE82C48",
+        "userIss": "https://sts.windows.net/c8358cc2-c042-48dc-8708-80d8c99b8f81/",
+        "userTenantId": "c8358cc2-c042-48dc-8708-80d8c99b8f81",
+        "userName": "Lucas Costa",
+        "upn": null
+    },
+    "computeDuration": "00:00:43.9040440",
+    "effectiveStartTimeUtc": null,
+    "runNumber": 1736449330,
+    "rootRunId": "ms-learm-bike-automl",
+    "experimentId": "67cf03a9-655c-49e3-8c17-18e249a176c2",
+    "userId": "7b6c14ce-bec0-4d68-985e-f5a4548aa405",
+    "statusRevision": 6,
+    "currentComputeTime": null,
+    "lastStartTimeUtc": null,
+    "lastModifiedBy": {
+        "userObjectId": "7b6c14ce-bec0-4d68-985e-f5a4548aa405",
+        "userPuId": "100320042EF1F196",
+        "userIdp": "live.com",
+        "userAltSecId": "1:live.com:00037FFF8BE82C48",
+        "userIss": "https://sts.windows.net/c8358cc2-c042-48dc-8708-80d8c99b8f81/",
+        "userTenantId": "c8358cc2-c042-48dc-8708-80d8c99b8f81",
+        "userName": "Lucas Costa",
+        "upn": null
+    },
+    "lastModifiedUtc": "2025-01-09T19:03:17.5535125+00:00",
+    "duration": "00:00:43.9040440",
+    "inputs": {
+        "training_data": {
+            "assetId": "azureml://locations/eastus/workspaces/76f44350-4eb2-44fa-a8b0-505bc1ad2bc9/data/alugueldebicicletas/versions/1",
+            "type": "MLTable"
+        }
+    },
+    "outputs": {
+        "mlflow_log_model_1865796137": {
+            "assetId": "azureml://locations/eastus/workspaces/76f44350-4eb2-44fa-a8b0-505bc1ad2bc9/models/azureml_ms-learm-bike-automl_2_output_mlflow_log_model_1865796137/versions/1",
+            "type": "MLFlowModel"
+        }
+    },
+    "currentAttemptId": 1
+}
