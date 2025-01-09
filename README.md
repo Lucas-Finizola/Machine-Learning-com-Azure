@@ -25,7 +25,8 @@ E ao escolher o modelo que aprensentou menor taxa de erro, é possível visualiz
 
 Além de que na aba de "pontos de extremidade" é possível realizar vários teste especificos em tempos de sua preferencia, até mesmo em tempo real.
 
-
+Exite também um modulo de treinamento da própria microsoft que os principais fundamentos sobre machine learning no link abaixo.
+https://learn.microsoft.com/pt-br/training/modules/fundamentals-machine-learning/1-introduction
 
 
 
